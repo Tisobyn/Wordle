@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .brown
 
     }
 

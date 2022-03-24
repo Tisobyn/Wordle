@@ -81,9 +81,9 @@
 		3ED8983527EC9F4000ED6E0E /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
-				3ED8982627EC9EDC00ED6E0E /* Main.storyboard */,
-				3ED8982027EC9EDC00ED6E0E /* AppDelegate.swift */,
 				3ED8982227EC9EDC00ED6E0E /* SceneDelegate.swift */,
+				3ED8982027EC9EDC00ED6E0E /* AppDelegate.swift */,
+				3ED8982627EC9EDC00ED6E0E /* Main.storyboard */,
 				3ED8982927EC9EE200ED6E0E /* Assets.xcassets */,
 				3ED8982B27EC9EE200ED6E0E /* LaunchScreen.storyboard */,
 				3ED8982E27EC9EE200ED6E0E /* Info.plist */,

@@ -7,9 +7,18 @@
 
 import UIKit
 
+protocol KeyboardViewControllerDelegate: AnyObject {
+    func keyboardViewController(
+        _ vc: KeyboardViewController,
+        didTapKey letter: Character
+    )
+}
+
 final class KeyboardViewController: UIViewController {
     private let letters = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
     private var keys: [[Character]] = []
+
+    weak var delegate: KeyboardViewControllerDelegate?
 
     let keyboard: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -87,7 +96,9 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let letter = keys[indexPath.section][indexPath.row]
+        delegate?.keyboardViewController(self, didTapKey: letter)
     }
 
 }

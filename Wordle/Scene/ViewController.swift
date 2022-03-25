@@ -8,7 +8,14 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    let answer = "after"
+    private let answers = [
+        "after",
+        "later",
+        "block",
+        "there",
+        "ultra"
+    ]
+    private var answer = "after"
     private var guesses: [[Character?]] = Array(
         repeating: Array(repeating: nil, count: 5),
         count: 6)
@@ -18,7 +25,8 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addChildren() 
+        addChildren()
+        answer = answers.randomElement() ?? "after"
     }
 
     // MARK: - UI Setting Functions

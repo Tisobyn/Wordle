@@ -14,13 +14,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .brown
-
+        addChildren() 
     }
+
+    // MARK: - UI Setting Functions
 
     private func addChildren() {
        addKeyboardVC()
        addBoardVC()
+       setConstraints()
     }
 
     private func addKeyboardVC() {
@@ -37,8 +39,19 @@ class ViewController: UIViewController {
         view.addSubview(boardVC.view)
     }
 
-    private func addConstraints() {
-        
+    private func setConstraints() {
+        NSLayoutConstraint.activate([
+            boardVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            boardVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            boardVC.view.topAnchor.constraint(equalTo: view.topAnchor),
+            boardVC.view.bottomAnchor.constraint(equalTo: keyboardVC.view.topAnchor),
+            boardVC.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
+
+            keyboardVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            keyboardVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            keyboardVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+
+        ])
     }
 
 }

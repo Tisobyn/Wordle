@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     let keyboardVC = KeyboardViewController()
     let boardVC = BoardViewController()
@@ -43,13 +43,13 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             boardVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             boardVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            boardVC.view.topAnchor.constraint(equalTo: view.topAnchor),
+            boardVC.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             boardVC.view.bottomAnchor.constraint(equalTo: keyboardVC.view.topAnchor),
             boardVC.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
 
             keyboardVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             keyboardVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            keyboardVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            keyboardVC.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
 
         ])
     }

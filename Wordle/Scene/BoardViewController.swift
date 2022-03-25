@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BoardViewController: UIViewController {
+final class BoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

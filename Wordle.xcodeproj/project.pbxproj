@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EB0EAD327EDE5D10069D2B8 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0EAD227EDE5D00069D2B8 /* KeyCell.swift */; };
 		3ED80FC527ECA6F00029A744 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED80FC427ECA6F00029A744 /* KeyboardViewController.swift */; };
 		3ED80FC727ECA71A0029A744 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED80FC627ECA71A0029A744 /* BoardViewController.swift */; };
 		3ED8982127EC9EDC00ED6E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8982027EC9EDC00ED6E0E /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EB0EAD227EDE5D00069D2B8 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 		3ED80FC427ECA6F00029A744 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		3ED80FC627ECA71A0029A744 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		3ED8981D27EC9EDC00ED6E0E /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EB0EAD127EDE5AC0069D2B8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3EB0EAD227EDE5D00069D2B8 /* KeyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		3ED8981427EC9EDC00ED6E0E = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 		3ED8983427EC9F3400ED6E0E /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				3EB0EAD127EDE5AC0069D2B8 /* Cell */,
 				3ED8982427EC9EDC00ED6E0E /* ViewController.swift */,
 				3ED80FC427ECA6F00029A744 /* KeyboardViewController.swift */,
 				3ED80FC627ECA71A0029A744 /* BoardViewController.swift */,
@@ -165,6 +176,7 @@
 				3ED8982527EC9EDC00ED6E0E /* ViewController.swift in Sources */,
 				3ED8982127EC9EDC00ED6E0E /* AppDelegate.swift in Sources */,
 				3ED8982327EC9EDC00ED6E0E /* SceneDelegate.swift in Sources */,
+				3EB0EAD327EDE5D10069D2B8 /* KeyCell.swift in Sources */,
 				3ED80FC527ECA6F00029A744 /* KeyboardViewController.swift in Sources */,
 				3ED80FC727ECA71A0029A744 /* BoardViewController.swift in Sources */,
 			);
